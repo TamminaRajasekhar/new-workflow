@@ -1,0 +1,19 @@
+
+
+name: CI
+on: [push]
+
+jobs:
+  hello-world-job:
+   runs-on: ubuntu-latest
+   name: a job to say hello  
+   steps:
+     -name: Hello Reactor Demoo
+      uses: TamminaRajasekhar/Action@v2
+      with: 
+       who-to-great: "welcome to reactor #raj"
+     -name: get the output time
+       run: echo "the time is ${{steps.hello.outputs.time}}"
+       
+       
+     
