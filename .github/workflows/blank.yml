@@ -9,7 +9,7 @@ jobs:
    name: a job to say hello  
    steps:
      -name: Hello Reactor Demoo
-      uses: TamminaRajasekhar/Action@v2
+      uses: TamminaRajasekhar/Actions@v1
       with: 
        who-to-great: "welcome to reactor #raj"
      -name: get the output time
